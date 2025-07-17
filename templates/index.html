@@ -1,37 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أكبر موقع إسلامي</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Fatwas</title>
 </head>
 <body>
-    <header>
-        <h1>أكبر موقع إسلامي</h1>
-        <nav>
-            <ul>
-                <li><a href="/">الرئيسية</a></li>
-                <li><a href="/fatwas">الفتاوى</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>الفتاوى:</h2>
-            <ul>
-                {% for fatwa in data %}
-                <li>
-                    <h3>{{ fatwa['title'] }}</h3>
-                    <p>{{ fatwa['question'] }}</p>
-                    <p>{{ fatwa['answer'] }}</p>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 أكبر موقع إسلامي</p>
-    </footer>
+    <h1>Fatwas List</h1>
+    <ul>
+        {% for fatwa in data %}
+            <li><strong>Number:</strong> {{ fatwa.number }} | <strong>Title:</strong> {{ fatwa.title }} </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
