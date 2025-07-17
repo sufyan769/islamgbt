@@ -22,16 +22,32 @@ header nav ul li {
     margin-right: 20px;
 }
 
-main {
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
     padding: 20px;
 }
 
-footer {
-    text-align: center;
+.content h2 {
+    color: #333;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    background-color: #fff;
+    margin: 10px 0;
     padding: 10px;
-    background-color: #00796b;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content ul li h3 {
+    color: #00796b;
 }
