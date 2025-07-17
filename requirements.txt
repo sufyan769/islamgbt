@@ -1,3 +1,4 @@
 Flask
 requests
-werkzeug==2.0.1
+werkzeug
+gunicorn
